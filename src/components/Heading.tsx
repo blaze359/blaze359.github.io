@@ -1,17 +1,18 @@
-import headerImage from "../assets/IMG_0255-1.jpg"
+import sunsetImage from "../assets/IMG_0255.jpg"
 import styled from "styled-components"
-import { Image } from "react-bootstrap";
 
 const Header = styled.header`
-    height: 10em;
+    height: 12em;
     width: 100%;
+    background-image: url(${sunsetImage});
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 75%;
 
 `;
 
 export default function Heading() {
     return (
-        <Header>
-            <Image src={headerImage} alt="sunset" fluid/>
-        </Header>
+        <Header />
     )
 }

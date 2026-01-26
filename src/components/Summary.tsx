@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import SummaryData from "../data/summary.json";
 
 export default function Summary() {

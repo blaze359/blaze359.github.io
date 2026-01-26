@@ -2,14 +2,16 @@
   "projects": [
     {
       "id": 1,
-      "name": "Project Alpha",
-      "description": "An innovative project that revolutionizes technology.",
+      "name": "Demo Storefront",
+      "description": "This project is a POC storefront build in Next.js.",
+      "repository": "",
       "url": ""
     },
     {
       "id": 2,
-      "name": "Project Beta",
-      "description": "A cutting-edge solution for modern problems.",
+      "name": "Selector Tool",
+      "description": "This is a selector tool built using AEM Edge Delivery.",
+      "repository": "",
       "url": ""
     }
   ]

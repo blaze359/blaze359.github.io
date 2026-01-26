@@ -18,7 +18,7 @@ export default function ProfileImage() {
         <Profile>
             <ProfilePic src={profileImage} alt="headshot" roundedCircle fluid thumbnail className="object-fit-cover"/>
             <h3>Jameson Arndt</h3>
-            <h4>Blaze359@gmail.com</h4>
+            <h6>Jameson.D.Arndt@gmail.com</h6>
         </Profile>
     )
 

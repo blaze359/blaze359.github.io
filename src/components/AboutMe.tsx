@@ -1,6 +1,10 @@
 
+import AboutData from "../data/about.json";
 export default function AboutMe() {
     return (
-        <section>About Me</section>
+        <section>
+            <h2>{AboutData.title}</h2>
+            <p>{AboutData.description}</p>
+        </section>
     )
 }

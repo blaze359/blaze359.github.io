@@ -1,0 +1,16 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project Alpha",
+      "description": "An innovative project that revolutionizes technology.",
+      "url": ""
+    },
+    {
+      "id": 2,
+      "name": "Project Beta",
+      "description": "A cutting-edge solution for modern problems.",
+      "url": ""
+    }
+  ]
+}

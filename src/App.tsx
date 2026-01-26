@@ -13,6 +13,9 @@ const Main = styled(Row)`
 const Left = styled(Col)`
   background-color: black;
   height: 100%;
+`;
+
+const ShiftUp = styled.div`
   transform: translate(0,-13%);
 `;
 
@@ -23,11 +26,24 @@ function App() {
         <Heading />
       </Row>
       <Main>
-        <Left xs={2}>
-          <ProfileImage />
-          <NavBar />
+        <Left xs={2} md="auto" className="d-none d-md-block">
+          <ShiftUp>
+            <Row>
+              <ProfileImage />
+            </Row>
+            <Row>
+              <NavBar />
+            </Row>
+          </ShiftUp>
         </Left>
-        <Col>
+        <Col
+          style={{
+            backgroundColor: "black",
+            color: "white",
+            padding: "20px",
+            height: "100%",
+          }}
+        >
           <Routing />
         </Col>
       </Main>

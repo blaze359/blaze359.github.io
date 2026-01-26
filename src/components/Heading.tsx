@@ -2,7 +2,7 @@ import sunsetImage from "../assets/IMG_0255.jpg"
 import styled from "styled-components"
 
 const Header = styled.header`
-    height: 12em;
+    height: 8em;
     width: 100%;
     background-image: url(${sunsetImage});
     background-size: cover;

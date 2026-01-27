@@ -10,7 +10,29 @@ export default function ProjectDetails() {
     return (
       <section className="d-flex flex-column gap-4">
         <h2>{project ? project.name : "Project Not Found"}</h2>
-        <p>{project ? project.longDescription : "No details available."}</p>
+        {project?.images && project.images.length > 0 ? 
+          project.images.map((img, index) => (
+            <img 
+              key={index} 
+              src={img} 
+              alt={`${project.name} screenshot ${index + 1}`} 
+              style={{ maxWidth: '100%', height: 'auto' }} 
+            />
+          )) 
+        : null}
+        {project?.problem ? (
+          <>
+            <div>
+              <h3>Problem</h3>
+              <p>{project.problem}</p>
+            </div>
+            <div>
+              <h3>Solution</h3>
+              <p>{project.solution}</p>
+            </div>
+          </>
+        ) : <p>{project ? project.longDescription : "No details available."}</p>}
+        
 
         {project?.url ? (
           <div>

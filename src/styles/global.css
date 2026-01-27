@@ -34,7 +34,7 @@ html {
   --color-primary-hover: #3b82f6;       /* blue-500 */
   --color-surface:       #1e293b;       /* slate-800 */
   --color-border:        #334155;       /* slate-700 */
-  --color-card:          #1e293b;
+  --color-card:          #000000;
   --shadow-sm:           0 1px 3px rgba(0,0,0,0.4);
 }
 
@@ -64,10 +64,11 @@ a:hover {
 }
 
 /* Cards, containers, etc. */
-.card {
+/* .card {
   background: var(--color-card);
   border: 1px solid var(--color-border);
+  color: var(--color-text);
   border-radius: 0.75rem;
   box-shadow: var(--shadow-sm);
   padding: 1.5rem;
-}
+} */

@@ -1,6 +1,5 @@
-import { Badge } from "react-bootstrap";
 import SummaryData from "../data/summary.json";
-import GetIcon from "../components/GetIcon";
+import MyBadge from "../components/MyBadge";
 
 export default function Summary() {
   return (
@@ -9,12 +8,9 @@ export default function Summary() {
       <p>{SummaryData.description}</p>
       <div>
         <h3>Skills</h3>
-        <div className="d-flex gap-4 fs-4">
-          {SummaryData.skills.map((skill) => (
-            <Badge key={skill} bg="primary">
-              <GetIcon name={skill} />
-              {skill}
-            </Badge>
+        <div className="d-flex gap-4 fs-4 flex-wrap">
+          {SummaryData.skills.map((skill, index) => (
+            <MyBadge text={skill} key={index} />
           ))}
         </div>
       </div>

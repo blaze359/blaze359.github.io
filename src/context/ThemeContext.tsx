@@ -28,7 +28,6 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
     // Listener for live OS changes
     const handleChange = (e: MediaQueryListEvent) => {
-      console.log("System theme changed to:", e.matches ? "dark" : "light"); // for debugging
       setTheme(e.matches ? "dark" : "light");
     };
 
@@ -38,7 +37,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     return () => {
       mediaQuery.removeEventListener("change", handleChange);
     };
-  }, []); // empty deps → only on mount
+  }, []);
 
   // Optional: if you still want a manual toggle button (but it won't persist)
   // const toggleTheme = () => {
@@ -54,8 +53,6 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       root.classList.remove("dark");
     }
 
-    // Optional debug
-    console.log("Applied class:", theme);
   }, [theme]); // runs whenever theme state changes
 
   return (

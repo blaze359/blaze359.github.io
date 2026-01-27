@@ -61,5 +61,13 @@
       "Major": "Computer Science and Engineering Technology",
       "GraduationYear": "2007"
     }
+  ],
+  "Certificates": [
+    {
+      "Name": "Meta Front-End Developer Professional Certificate ",
+      "IssuingOrganization": "Coursera",
+      "Badge": ""
+    }
   ]
+
 }

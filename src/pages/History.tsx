@@ -46,6 +46,16 @@ export default function History() {
           </li>
         ))}
       </Ul>
+      <h2>Certifications</h2>
+      <Ul>
+        {HistoryData.Certificates.map((cert) => (
+          <li key={cert.Name}>
+            <h3 className="mb-0">{cert.Name}</h3>
+            <p className="mb-0">Issued by: {cert.IssuingOrganization}</p>
+            {cert.Badge && <img src={cert.Badge} alt={`${cert.Name} badge`} />}
+          </li>
+        ))}
+      </Ul>
     </section>
   );
 }

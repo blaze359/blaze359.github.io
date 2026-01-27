@@ -45,7 +45,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-```
+---
+
 To Do List
 
 NAV:
@@ -53,7 +54,7 @@ NAV:
 - [] Add mobile hamberger menu
 
 Summary:
-- [] Add additional details and skills section
+- [X] Add additional details and skills section
 
 Projects:
 - [] Convert list to a list of bootstrap cards
@@ -63,8 +64,9 @@ Project Details:
 - [] Add bootstrap image carousel
 
 History:
-- [] Add content
+- [X] Add content
 
 About Me: 
 - [] Add content
+- [] add icons for hobbies
 

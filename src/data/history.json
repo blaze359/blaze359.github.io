@@ -8,23 +8,58 @@
       "EndDate": "Present",
       "Positions": [
         {
-          "Title": "Senior Software Engineer",
-          "StartDate": "2021-08-01",
+          "Title": "Software Engineer III",
+          "StartDate": "2025",
           "EndDate": "Present",
           "Responsibilities": [
-            "Develop and maintain web applications using modern frameworks.",
-            "Collaborate with cross-functional teams to deliver high-quality software solutions."
+            "Architected responsive frontend features for next-gen e-commerce platform using Next.js, TypeScript, and Tailwind, delivering high-performance, mobile-first experiences in a headless Commerce Tools setup.",
+            "Designed and implemented APIs in a Backend-for-Frontend (BFF) pattern, bridging frontend to Commerce Tools and enabling seamless, scalable headless commerce for B2C shopping experience.",
+            "Owned design implementation of E-Commerce emails through SendGrid.",
+            "Led implementation of Product pages with data integration with PIM and Commerce Tools for first 20 products in MVP phase."
           ]
         },
         {
-          "Title": "Software Engineer",
-          "StartDate": "2018-06-01",
-          "EndDate": "2021-07-31",
+          "Title": "Software Engineer II",
+          "StartDate": "2020",
+          "EndDate": "2025",
           "Responsibilities": [
-            "Contributed to the development of e-commerce platforms"
+            "Mentored and led team of 3 developers in adopting AEM Edge Delivery, accelerating feature delivery and fostering best practices in composable, high-performance web development. Migrating 3 sites from legacy hosting to Author focused experience and obtaining 90+ lighthouse scores.",
+            "Authored custom AEM component that integrated with PIM data to consolidated 10+ legacy product selectors into modern, reusable modules, dramatically improving maintainability.",
+            "Proposed and led implementation of Jira Tempo for time tracking, replacing legacy Innotas tool and delivering annual licensing cost savings of $7,500.",
+            "Proposed and implemented multi-level Jira project structure for development and marketing teams to work collaboratively.",
+            "Integrated Flex Deploy for Oracle with Jira, connecting the deployment process with change control allowing for streamlined approvals and deployments."
+          ]
+        },
+        {
+          "Title": "Software Engineer I",
+          "StartDate": "2018",
+          "EndDate": "2020",
+          "Responsibilities": [
+            "Contributed to AEM based public site and SAP based B2B E-Commerce portal.",
+            "Led architecture and development of 20+ React-based product selector tools for B2B portal, enabling complex product configurations and simplified ordering process.",
+            "Managed external web development contractor for 1.5 years, ensuring on-time delivery of key features while maintaining high code quality standards.",
+            "Atlassian product administrator supporting global IT and Engineering."
+          ]
+        },
+        {
+          "Title": "PC Support Specialist I – III / ERP Developer",
+          "StartDate": "2004",
+          "EndDate": "2018",
+          "Responsibilities": [
+            "Owned Syteline ERP customizations for 3 years, adding critical features, reducing technical debt through code refactoring, and supporting smooth transition to Oracle ERP.",
+            "Conceptualized, architected and implemented digital sign-in solution adopted across 7 facilities, eliminating paper-based processes and improving security/compliance."
           ]
         }
       ]
+    }
+  ],
+  "Education": [
+    {
+      "School": "University of Toledo",
+      "Location": "Toledo, OH",
+      "Degree": "Bachelor of Science",
+      "Major": "Computer Science and Engineering Technology",
+      "GraduationYear": "2007"
     }
   ]
 }

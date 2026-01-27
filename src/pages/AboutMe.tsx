@@ -5,6 +5,12 @@ export default function AboutMe() {
         <section>
             <h2>{AboutData.title}</h2>
             <p>{AboutData.description}</p>
+            <h3>Hobbies & Interests</h3>
+            <ul>
+                {AboutData.hobbies.map((hobby, index) => (
+                    <li key={index}>{hobby}</li>
+                ))}
+            </ul>
         </section>
     )
 }

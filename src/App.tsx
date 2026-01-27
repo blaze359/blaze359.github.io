@@ -38,12 +38,7 @@ function App() {
             </Row>
           </ShiftUp>
         </Left>
-        <Col
-          style={{
-            padding: "20px",
-            height: "100%",
-          }}
-        >
+        <Col className="p-5 mb-5">
           <Routing />
         </Col>
       </Main>

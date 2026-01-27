@@ -16,7 +16,7 @@ export default function ProjectDetails() {
               key={index} 
               src={img} 
               alt={`${project.name} screenshot ${index + 1}`} 
-              style={{ maxWidth: '100%', height: 'auto' }} 
+              className="h-auto mw-100"
             />
           )) 
         : null}

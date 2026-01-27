@@ -1,20 +1,51 @@
 import HistoryData from "../data/history.json";
+import { Ul } from "../styles/Ul";
 export default function History() {
   return (
     <section>
       <h2>History</h2>
-      <ul>
+      <Ul>
         {HistoryData.History.map((item) => (
           <li key={item.Company}>
-            <h3>
-              {item.Company} - {item.HQLocation}
+            <h3 className="mb-0">
+              {item.Company} - {item.Location}
             </h3>
+            <p className="mb-0">Headquarters: {item.HQLocation}</p>
             <h5>
               {item.StartDate} - {item.EndDate}
             </h5>
+            <Ul className="d-flex flex-column gap-4">
+              {item.Positions.map((positions, index) => (
+                <li key={index}>
+                  <strong>{positions.Title}</strong>
+                  <div>
+                    {positions.StartDate} - {positions.EndDate}
+                  </div>
+                  <ul>
+                    {positions.Responsibilities.map((resp, respIndex) => (
+                      <li key={respIndex}>{resp}</li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </Ul>
           </li>
         ))}
-      </ul>
+      </Ul>
+      <h2>Education</h2>
+      <Ul>
+        {HistoryData.Education.map((edu) => (
+          <li key={edu.School}>
+            <h3 className="mb-0">
+              {edu.School} - {edu.Location}
+            </h3>
+            <h5>
+              {edu.Degree} ({edu.GraduationYear})
+            </h5>
+            <p className="mb-0">Major: {edu.Major}</p>
+          </li>
+        ))}
+      </Ul>
     </section>
   );
 }

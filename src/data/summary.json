@@ -1,4 +1,15 @@
 {
   "title": "Welcome to my profile page!",
-  "description": "This page contains information about Jameson Arndt, including his profile image, projects, and contact details."
+  "description": "This page contains information about Jameson Arndt, including his profile image, projects, and contact details.",
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "AEM",
+    "GraphQL",
+    "HTML",
+    "CSS"
+  ]
 }

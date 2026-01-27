@@ -1,0 +1,73 @@
+/* src/index.css */
+
+/* ============================================= */
+/* ============= BASE & RESET ================== */
+/* ============================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;           /* 16px base */
+}
+
+/* ============================================= */
+/* ============= THEME VARIABLES =============== */
+/* ============================================= */
+
+:root {
+  /* Light mode defaults */
+  --color-background:    #ffffff;
+  --color-text:          black;       /* slate-900 */
+  --color-text-muted:    #64748b;       /* slate-500 */
+  --color-primary:       #3b82f6;       /* blue-500 */
+  --color-primary-hover: #2563eb;       /* blue-600 */
+  --color-surface:       #f1f5f9;       /* slate-100 */
+  --color-border:        #e2e8f0;       /* slate-200 */
+  --color-card:          #ffffff;
+  --shadow-sm:           0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-background:    black;       /* slate-900 */
+  --color-text:          #f1f5f9;       /* slate-100 */
+  --color-text-muted:    #94a3b8;       /* slate-400 */
+  --color-primary:       #60a5fa;       /* blue-400 — lighter for dark bg */
+  --color-primary-hover: #3b82f6;       /* blue-500 */
+  --color-surface:       #1e293b;       /* slate-800 */
+  --color-border:        #334155;       /* slate-700 */
+  --color-card:          #1e293b;
+  --shadow-sm:           0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* ============================================= */
+/* ============= APPLY VARIABLES =============== */
+/* ============================================= */
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button, a {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+/* Example usage classes */
+.bg-primary       { background-color: var(--color-primary); }
+.text-primary     { color: var(--color-primary); }
+.hover\:bg-primary:hover { background-color: var(--color-primary-hover); }
+
+/* Cards, containers, etc. */
+.card {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+}

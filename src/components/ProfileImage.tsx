@@ -10,7 +10,6 @@ const ProfilePic = styled(Image)`
 `
 const Profile = styled.div`
     text-align: center;
-    color: white;
 `
 
 export default function ProfileImage() {

@@ -14,9 +14,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    # This enables manual approval before the job runs
-    environment: github-pages
-
     steps:
       # 1️⃣ Checkout the code
       - name: Checkout repo

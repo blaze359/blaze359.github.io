@@ -1,4 +1,10 @@
 {
   "title": "About Me",
-  "description": "I'm a passionate developer with experience in building web applications."
+  "description": "",
+  "hobbies": [
+    "I enjoy spending time with my family",
+    "Exploring the outdoors",
+    "Nature Photography",
+    "Soccer"
+  ]
 }

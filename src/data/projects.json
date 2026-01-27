@@ -2,17 +2,73 @@
   "projects": [
     {
       "id": 1,
-      "name": "Demo Storefront",
-      "description": "This project is a POC storefront build in Next.js.",
-      "repository": "",
-      "url": ""
+      "name": "This Profile Site",
+      "shortDescription": "This is my profile site code.",
+      "longDescription": "",
+      "repository": "https://github.com/blaze359/blaze359.github.io",
+      "url": "https://blaze359.github.io/",
+      "images": [],
+      "technologies": ["React", "TypeScript", "Github Pages", "Github Actions", "styled-components", "Bootstrap" ]
     },
     {
       "id": 2,
-      "name": "Selector Tool",
-      "description": "This is a selector tool built using AEM Edge Delivery.",
+      "name": "Demo Storefront",
+      "shortDescription": "This project is a POC storefront build in Next.js.",
+      "longDescription": "",
       "repository": "",
-      "url": ""
+      "url": "",
+      "images": [],
+      "technologies": ["Next.js", "React", "TypeScript", "Vercel" ]
+    },
+    {
+      "id": 3,
+      "name": "Selector Tool",
+      "shortDescription": "To Do: This is a selector tool built using AEM Edge Delivery.",
+      "longDescription": "",
+      "repository": "",
+      "url": "",
+      "images": [],
+      "technologies": ["Javascript", "AEM Edge Delivery"]
+    },
+    {
+      "id": 4,
+      "name": "PIM driven Selector Tool",
+      "shortDescription": "This is an AEM compoenent that uses PIM Model Group data to drive selections.",
+      "longDescription": "",
+      "repository": "",
+      "url": "",
+      "images": [],
+      "technologies": ["Java", "Groovy", "AEM", "PIM"]
+    },
+    {
+      "id": 5,
+      "name": "Single Page Application Selector Tools",
+      "shortDescription": "Single Page applications built using React and OpenCPQ",
+      "longDescription": "",
+      "repository": "",
+      "url": "",
+      "images": [],
+      "technologies": ["React", "Javascript"]
+    },
+    {
+      "id": 6,
+      "name": "AEM Edge Delivery Site",
+      "shortDescription": "Site that was migrated from an older technology stack to AEM Edge Delivery.",
+      "longDescription": "",
+      "repository": "",
+      "url": "",
+      "images": [],
+      "technologies": ["AEM Edge Delivery", "JavaScript", "Preact"]
+    },
+    {
+      "id": 7,
+      "name": "AEM Site",
+      "shortDescription": "This is the main company site built using AEM.",
+      "longDescription": "",
+      "repository": "",
+      "url": "https://www.graco.com",
+      "images": [],
+      "technologies": ["AEM", "Java", "JavaScript"]
     }
   ]
 }

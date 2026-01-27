@@ -3,15 +3,17 @@ import ProfileImage from './components/ProfileImage';
 import NavBar from './components/NavBar';
 import Routing from './components/Routing';
 import "bootstrap/dist/css/bootstrap.css";
+import "./styles/global.css";
 import { Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const Main = styled(Row)`
   height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
 `;
 
 const Left = styled(Col)`
-  background-color: black;
   height: 100%;
 `;
 
@@ -38,8 +40,6 @@ function App() {
         </Left>
         <Col
           style={{
-            backgroundColor: "black",
-            color: "white",
             padding: "20px",
             height: "100%",
           }}

@@ -44,3 +44,27 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+```
+To Do List
+
+NAV:
+- [] Possibly convert to bootstrap navbar so that other options are greyed out when on a specific page. At least convert to bootstrap nav
+- [] Add mobile hamberger menu
+
+Summary:
+- [] Add additional details and skills section
+
+Projects:
+- [] Convert list to a list of bootstrap cards
+
+Project Details:
+- [] Add additional content
+- [] Add bootstrap image carousel
+
+History:
+- [] Add content
+
+About Me: 
+- [] Add content
+

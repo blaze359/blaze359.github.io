@@ -1,0 +1,30 @@
+{
+  "History": [
+    {
+      "Company": "Graco Inc.",
+      "HQLocation": "Minneapolis, MN",
+      "Location": "North Canton, OH",
+      "StartDate": "2004",
+      "EndDate": "Present",
+      "Positions": [
+        {
+          "Title": "Senior Software Engineer",
+          "StartDate": "2021-08-01",
+          "EndDate": "Present",
+          "Responsibilities": [
+            "Develop and maintain web applications using modern frameworks.",
+            "Collaborate with cross-functional teams to deliver high-quality software solutions."
+          ]
+        },
+        {
+          "Title": "Software Engineer",
+          "StartDate": "2018-06-01",
+          "EndDate": "2021-07-31",
+          "Responsibilities": [
+            "Contributed to the development of e-commerce platforms"
+          ]
+        }
+      ]
+    }
+  ]
+}

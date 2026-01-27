@@ -1,6 +1,7 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAws, faBootstrap, faConfluence, faCss3, faFigma, faGithub, faHtml5, faJava, faJira, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faBookOpen, faCameraRetro, faFutbol, faMusic, faPeopleGroup, faPersonHiking } from "@fortawesome/free-solid-svg-icons";
 
 type GetIconProps = {
   readonly name: string;
@@ -33,6 +34,18 @@ export default function GetIcon({ name }: GetIconProps) {
       return <FontAwesomeIcon icon={faConfluence} />;
     case "FIGMA":
       return <FontAwesomeIcon icon={faFigma} />;
+    case "FAMILY":
+      return <FontAwesomeIcon icon={faPeopleGroup} />;
+    case "OUTDOORS":
+      return <FontAwesomeIcon icon={faPersonHiking} />;
+    case "READING":
+      return <FontAwesomeIcon icon={faBookOpen} />;
+    case "PHOTOGRAPHY":
+      return <FontAwesomeIcon icon={faCameraRetro} />;
+    case "SOCCER":
+      return <FontAwesomeIcon icon={faFutbol} />;
+    case "VIOLIN":
+      return <FontAwesomeIcon icon={faMusic} />;
     default:
       return null;
   }

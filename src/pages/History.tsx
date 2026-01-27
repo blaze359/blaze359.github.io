@@ -16,7 +16,7 @@ export default function History() {
             </h5>
             <Ul className="d-flex flex-column gap-4">
               {item.Positions.map((positions, index) => (
-                <li key={index}>
+                <li key={positions.Title}>
                   <strong>{positions.Title}</strong>
                   <div>
                     {positions.StartDate} - {positions.EndDate}

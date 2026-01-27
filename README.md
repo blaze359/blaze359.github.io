@@ -57,7 +57,8 @@ Summary:
 - [X] Add additional details and skills section
 
 Projects:
-- [] Convert list to a list of bootstrap cards
+- [X] Convert list to a list of bootstrap cards
+- [] Adjust card colors for dark mode
 
 Project Details:
 - [] Add additional content
@@ -67,6 +68,6 @@ History:
 - [X] Add content
 
 About Me: 
-- [] Add content
-- [] add icons for hobbies
+- [X] Add content
+- [X] add icons for hobbies
 

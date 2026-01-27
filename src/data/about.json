@@ -1,11 +1,30 @@
 {
   "title": "About Me",
-  "description": "",
+  "description": "I am a passionate developer but also enjoy a variety of hobbies and interests. I was a Boy Scout and earned the rank of Eagle. I enjoy spending time outdoors hiking and exploring nature, taking pictures of the beauty I find. I am an avid reader, particularly of science fiction novels, which fuel my imagination and creativity.",
   "hobbies": [
-    "I enjoy spending time with my family",
-    "Exploring the outdoors",
-    "Nature Photography",
-    "Soccer",
-    "Learning the violin"
+    {
+      "text": "Spending time with my family.",
+      "icon": "family"
+    },
+    {
+      "text": "Exploring the outdoors.",
+      "icon": "outdoors"
+    },
+    {
+      "text": "Nature Photography.",
+      "icon": "photography"
+    },
+    {
+      "text": "Reading science fiction novels.",
+      "icon": "reading"
+    },
+    {
+      "text": "Playing soccer.",
+      "icon": "soccer"
+    },
+    {
+      "text": "Learning the violin.",
+      "icon": "violin"
+    }
   ]
 }

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import projectData from "../data/projects.json";
 import Badge from "react-bootstrap/Badge";
+import GetIcon from "../components/GetIcon";
 
 export default function Projects() {
     return (
@@ -20,6 +21,7 @@ export default function Projects() {
                         bg="secondary"
                         style={{ marginRight: "5px" }}
                       >
+                        <GetIcon name={tech} />
                         {tech}
                       </Badge>
                     ),

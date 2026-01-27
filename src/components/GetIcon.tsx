@@ -1,6 +1,6 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faJava, faReact } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap, faGithub, faJava, faReact } from "@fortawesome/free-brands-svg-icons";
 
 type GetIconProps = {
   readonly name: string;
@@ -14,7 +14,10 @@ export default function GetIcon({ name }: GetIconProps) {
       return <FontAwesomeIcon icon={faJava} />;
     case "GITHUB":
     case "GITHUB PAGES":
+    case "GITHUB ACTIONS":
       return <FontAwesomeIcon icon={faGithub} />;
+    case "BOOTSTRAP":
+      return <FontAwesomeIcon icon={faBootstrap} />;
     default:
       return null;
   }

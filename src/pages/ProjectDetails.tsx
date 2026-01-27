@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import projectData from "../data/projects.json";
+import GetIcon from "../components/GetIcon";
 
 export default function ProjectDetails() {
     const { id } = useParams();
@@ -34,7 +35,7 @@ export default function ProjectDetails() {
         <div> Technologies:
             <ul>
             {project?.technologies.map((tech) => (
-                <li key={tech}>{tech}</li>
+                <li key={tech}><GetIcon name={tech} />{tech}</li>
             ))}
             </ul>
         </div>

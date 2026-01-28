@@ -49,6 +49,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 To Do List
 
+General:
+- [] Add lint tests and add to deployment process.
+
 NAV:
 - [X] Possibly convert to bootstrap navbar so that other options are greyed out when on a specific page. At least convert to bootstrap nav
 - [X] Add mobile hamberger menu

@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import projectData from "../data/projects.json";
-import GetIcon from "../components/GetIcon";
 import ImageCarousel from "../components/ImageCarousel";
 import MyBadge from "../components/MyBadge";
 

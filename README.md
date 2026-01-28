@@ -50,8 +50,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 To Do List
 
 NAV:
-- [] Possibly convert to bootstrap navbar so that other options are greyed out when on a specific page. At least convert to bootstrap nav
-- [] Add mobile hamberger menu
+- [X] Possibly convert to bootstrap navbar so that other options are greyed out when on a specific page. At least convert to bootstrap nav
+- [X] Add mobile hamberger menu
 
 Summary:
 - [X] Add additional details and skills section
@@ -61,8 +61,8 @@ Projects:
 - [] Adjust card colors for dark mode
 
 Project Details:
-- [] Add additional content
-- [] Add bootstrap image carousel
+- [X] Add additional content
+- [X] Add bootstrap image carousel
 
 History:
 - [X] Add content

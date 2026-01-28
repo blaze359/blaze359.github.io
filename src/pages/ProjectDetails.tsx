@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import projectData from "../data/projects.json";
 import GetIcon from "../components/GetIcon";
+import ImageCarousel from "../components/ImageCarousel";
+import MyBadge from "../components/MyBadge";
 
 export default function ProjectDetails() {
     const { id } = useParams();
@@ -11,14 +13,7 @@ export default function ProjectDetails() {
       <section className="d-flex flex-column gap-4">
         <h2>{project ? project.name : "Project Not Found"}</h2>
         {project?.images && project.images.length > 0 ? 
-          project.images.map((img, index) => (
-            <img 
-              key={index} 
-              src={img} 
-              alt={`${project.name} screenshot ${index + 1}`} 
-              className="h-auto mw-100"
-            />
-          )) 
+          <ImageCarousel images={project.images} />
         : null}
         {project?.problem ? (
           <>
@@ -34,12 +29,16 @@ export default function ProjectDetails() {
         ) : <p>{project ? project.longDescription : "No details available."}</p>}
         
 
-        {project?.url ? (
+        {project?.url && project.url.length > 0 ? (
           <div>
             URL:{" "}
-            <a href={project.url} target="_blank" rel="noopener noreferrer">
-              {project.url}
-            </a>
+            {project.url.map((url, index) => (
+              url.includes("http") ? (
+              <a key={index} href={url} target="_blank" rel="noopener noreferrer">
+                {url}
+              </a>
+            ) : <p key={index}>{url}</p>
+            ))}
           </div>
         ) : null}
         {project?.repository ? (
@@ -55,11 +54,16 @@ export default function ProjectDetails() {
           </div>
         ) : null}
         <div> Technologies:
-            <ul>
+            <div className="d-flex mt-2">
             {project?.technologies.map((tech) => (
-                <li key={tech}><GetIcon name={tech} />{tech}</li>
+              <MyBadge
+                text={tech}
+                key={tech}
+                bg="secondary"
+                className="me-2 fs-5"
+              />
             ))}
-            </ul>
+            </div>
         </div>
       </section>
     );

@@ -22,6 +22,7 @@ html {
   --color-surface:       #f1f5f9;       /* slate-100 */
   --color-border:        #e2e8f0;       /* slate-200 */
   --color-card:          #ffffff;
+  --color-background-mobile-nav: white;
   --shadow-sm:           0 1px 2px rgba(0,0,0,0.05);
 }
 
@@ -35,6 +36,7 @@ html {
   --color-surface:       #1e293b;       /* slate-800 */
   --color-border:        #334155;       /* slate-700 */
   --color-card:          #000000;
+  --color-background-mobile-nav: #212529;
   --shadow-sm:           0 1px 3px rgba(0,0,0,0.4);
 }
 
@@ -42,7 +44,12 @@ html {
 /* ============= APPLY VARIABLES =============== */
 /* ============================================= */
 
-body {
+.offcanvas {
+  background-color: var(--color-background-mobile-nav);
+  color: var(--color-text);
+}
+
+body{
   background-color: var(--color-background);
   color: var(--color-text);
   transition: background-color 0.2s ease, color 0.2s ease;
@@ -53,7 +60,7 @@ button, a {
 }
 
 a {
-  color: var(--color-text);
+  color: var(--color-text) !important;
   text-decoration: none;
 
 

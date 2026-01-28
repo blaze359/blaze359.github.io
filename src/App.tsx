@@ -1,11 +1,15 @@
 import Heading from './components/Heading';
 import ProfileImage from './components/ProfileImage';
-import NavBar from './components/NavBar';
+import DesktopNav from './components/DesktopNav';
+import MobileNav from './components/MobileNav';
 import Routing from './components/Routing';
 import "bootstrap/dist/css/bootstrap.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./styles/global.css";
 import { Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 const Main = styled(Row)`
   height: 100%;
@@ -25,7 +29,8 @@ const ShiftUp = styled.div`
 function App() {
   return (
     <>
-      <Row>
+      <MobileNav />
+      <Row className='me-0'>
         <Heading />
       </Row>
       <Main>
@@ -35,7 +40,7 @@ function App() {
               <ProfileImage />
             </Row>
             <Row>
-              <NavBar />
+              <DesktopNav />
             </Row>
           </ShiftUp>
         </Left>

@@ -5,7 +5,7 @@ import { Ul } from "../styles/Ul";
 export default function AboutMe() {
     return (
       <section>
-        <h2>{AboutData.title}</h2>
+        <h1>{AboutData.title}</h1>
         <p>{AboutData.description}</p>
         <h3>Hobbies & Interests</h3>
         <Ul className="d-flex flex-column gap-2">

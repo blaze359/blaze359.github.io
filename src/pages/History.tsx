@@ -1,10 +1,11 @@
+import { Accordion } from "react-bootstrap";
 import HistoryData from "../data/history.json";
 import { Ul } from "../styles/Ul";
 export default function History() {
   return (
     <section>
-      <h2>History</h2>
-      <Ul>
+      <h1>History</h1>
+      <Ul className="ps-0">
         {HistoryData.History.map((item) => (
           <li key={item.Company}>
             <h3 className="mb-0">
@@ -14,21 +15,30 @@ export default function History() {
             <h5>
               {item.StartDate} - {item.EndDate}
             </h5>
-            <Ul className="d-flex flex-column gap-4">
+            <Accordion>
               {item.Positions.map((positions, index) => (
-                <li key={positions.Title}>
-                  <strong>{positions.Title}</strong>
-                  <div>
-                    {positions.StartDate} - {positions.EndDate}
-                  </div>
-                  <ul>
-                    {positions.Responsibilities.map((resp, respIndex) => (
-                      <li key={respIndex}>{resp}</li>
-                    ))}
-                  </ul>
-                </li>
+                <Accordion.Item
+                  key={positions.Title}
+                  eventKey={index.toString()}
+                >
+                  <Accordion.Header>
+                    <div className="d-flex flex-column">
+                      <strong>{positions.Title}</strong>
+                      <div>
+                        {positions.StartDate} - {positions.EndDate}
+                      </div>
+                    </div>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <ul>
+                      {positions.Responsibilities.map((resp, respIndex) => (
+                        <li key={respIndex}>{resp}</li>
+                      ))}
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
               ))}
-            </Ul>
+            </Accordion>
           </li>
         ))}
       </Ul>

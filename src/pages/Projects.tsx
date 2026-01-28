@@ -6,8 +6,8 @@ import MyBadge from "../components/MyBadge";
 export default function Projects() {
     return (
       <section>
-        <h2>Projects</h2>
-        <ul>
+        <h1>Projects</h1>
+        <ul className="ps-0">
           {projectData.projects.map((project) => (
             <li key={project.id} className="d-flex flex-column gap-2 mb-4">
               <Link
@@ -20,7 +20,7 @@ export default function Projects() {
                   </Card.Header>
                   <Card.Body>
                     <Card.Text>{project.shortDescription}</Card.Text>
-                    <div className="d-flex">
+                    <div className="d-flex flex-wrap gap-2">
                       {project.technologies.map(
                         (tech, index) =>
                           index < 3 && (
@@ -28,7 +28,6 @@ export default function Projects() {
                               text={tech}
                               key={tech}
                               bg="secondary"
-                              className="me-2"
                             />
                           ),
                       )}

@@ -4,7 +4,7 @@ import MyBadge from "../components/MyBadge";
 export default function Summary() {
   return (
     <section>
-      <h2>{SummaryData.title}</h2>
+      <h1>{SummaryData.title}</h1>
       <p>{SummaryData.description}</p>
       <div>
         <h3>Skills</h3>

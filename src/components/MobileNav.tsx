@@ -37,7 +37,7 @@ function MobileNav() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ProfileImage />
-          <DesktopNav />
+          <DesktopNav onAction={() => setShow(false)} />
         </Offcanvas.Body>
       </Offcanvas>
     </>

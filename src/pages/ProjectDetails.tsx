@@ -53,13 +53,13 @@ export default function ProjectDetails() {
           </div>
         ) : null}
         <div> Technologies:
-            <div className="d-flex mt-2">
+            <div className="d-flex flex-wrap gap-2 mt-2">
             {project?.technologies.map((tech) => (
               <MyBadge
                 text={tech}
                 key={tech}
                 bg="secondary"
-                className="me-2 fs-5"
+                className="fs-5"
               />
             ))}
             </div>

@@ -24,10 +24,13 @@ html {
   --color-card:          #ffffff;
   --color-background-mobile-nav: white;
   --shadow-sm:           0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md:           0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg:           0 10px 15px rgba(0,0,0,0.1);
   --carousel-color: 1;
+  --card-header-bg: #f8fafc;
 }
 
-
+/* rgba(33, 37, 41, 0.03) */
 /* Dark mode overrides */
 .dark {
   --color-background:    black;       /* slate-900 */
@@ -39,8 +42,11 @@ html {
   --color-border:        #334155;       /* slate-700 */
   --color-card:          #000000;
   --color-background-mobile-nav: #212529;
-  --shadow-sm:           0 1px 3px rgba(0,0,0,0.4);
+  --shadow-sm: 0 1px 3px rgba(255, 255, 255, 0.08);
+  --shadow-md: 0 4px 6px rgba(255, 255, 255, 0.12);
+  --shadow-lg: 0 10px 15px rgba(255, 255, 255, 0.16);
   --carousel-color: 0;
+  --card-header-bg: #1e293b;
 }
 
 /* ============================================= */
@@ -79,11 +85,20 @@ a:hover {
 }
 
 /* Cards, containers, etc. */
-/* .card {
+.card {
   background: var(--color-card);
   border: 1px solid var(--color-border);
   color: var(--color-text);
   border-radius: 0.75rem;
   box-shadow: var(--shadow-sm);
   padding: 1.5rem;
-} */
+}
+
+.card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  background-color: var(--card-header-bg);
+}

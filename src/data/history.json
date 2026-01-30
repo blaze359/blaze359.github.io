@@ -23,7 +23,7 @@
           "StartDate": "2020",
           "EndDate": "2025",
           "Responsibilities": [
-            "Mentored and led team of 3 developers in adopting AEM Edge Delivery, accelerating feature delivery and fostering best practices in composable, high-performance web development. Migrating 3 sites from legacy hosting to Author focused experience and obtaining 90+ lighthouse scores.",
+            "Mentored and led team of 3 developers in adopting AEM Edge Delivery, accelerating feature delivery and fostering best practices in composable, high-performance web development. Migrating 3 sites from legacy hosting to Author focused experience and obtaining 90+ Lighthouse scores.",
             "Authored custom AEM component that integrated with PIM data to consolidated 10+ legacy product selectors into modern, reusable modules, dramatically improving maintainability.",
             "Proposed and led implementation of Jira Tempo for time tracking, replacing legacy Innotas tool and delivering annual licensing cost savings of $7,500.",
             "Proposed and implemented multi-level Jira project structure for development and marketing teams to work collaboratively.",

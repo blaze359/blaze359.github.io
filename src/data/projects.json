@@ -14,13 +14,13 @@
     },
     {
       "id": 2,
-      "name": "Demo Storefront",
+      "name": "My Storefront",
       "shortDescription": "In Development: This project is a POC storefront build in Next.js.",
       "longDescription": "This project is a proof of concept storefront built using Next.js. It demonstrates my skills in building modern web applications with React and Next.js, including server-side rendering, static site generation, and API routes. The site features a simple product catalog, shopping cart functionality. The design is responsive and optimized for performance. This project is still under development and will be updated with more features and improvements in the future.",
       "problem": "",
       "solution": "",
-      "repository": "https://github.com/blaze359/Demo-Store",
-      "url": [],
+      "repository": "https://github.com/blaze359/my-store",
+      "url": ["https://my-store-hazel-chi.vercel.app/"],
       "images": [],
       "technologies": ["Next.js", "React", "TypeScript", "Vercel" ]
     },

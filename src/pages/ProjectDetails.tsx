@@ -11,9 +11,9 @@ export default function ProjectDetails() {
     return (
       <section className="d-flex flex-column gap-4">
         <h2>{project ? project.name : "Project Not Found"}</h2>
-        {project?.images && project.images.length > 0 ? 
+        {project?.images && project.images.length > 0 ? (
           <ImageCarousel images={project.images} />
-        : null}
+        ) : null}
         {project?.problem ? (
           <>
             <div>
@@ -25,44 +25,53 @@ export default function ProjectDetails() {
               <p>{project.solution}</p>
             </div>
           </>
-        ) : <p>{project ? project.longDescription : "No details available."}</p>}
-        
+        ) : (
+          <p>{project ? project.longDescription : "No details available."}</p>
+        )}
 
         {project?.url && project.url.length > 0 ? (
-          <div>
-            URL:{" "}
-            {project.url.map((url, index) => (
+          <div className="d-flex flex-row gap-2">
+            <p>URL:</p>
+            {project.url.map((url, index) =>
               url.includes("http") ? (
-              <a key={index} href={url} target="_blank" rel="noopener noreferrer">
-                {url}
-              </a>
-            ) : <p key={index}>{url}</p>
-            ))}
+                <a
+                  key={index}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {url}
+                </a>
+              ) : (
+                <p key={index}>{url}</p>
+              ),
+            )}
           </div>
         ) : null}
         {project?.repository ? (
-          <div>
-            Repository:{" "}
-            <a
-              href={project.repository}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {project.repository}
-            </a>
+          <div className="d-flex flex-row gap-2">
+            <p>Repository:</p>
+            {project.repository.includes("http") ? (
+              <a
+                href={project.repository}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.repository}
+              </a>
+            ) : (
+              <p>{project.repository}</p>
+            )}
           </div>
         ) : null}
-        <div> Technologies:
-            <div className="d-flex flex-wrap gap-2 mt-2">
+        <div>
+          {" "}
+          Technologies:
+          <div className="d-flex flex-wrap gap-2 mt-2">
             {project?.technologies.map((tech) => (
-              <MyBadge
-                text={tech}
-                key={tech}
-                bg="secondary"
-                className="fs-5"
-              />
+              <MyBadge text={tech} key={tech} bg="secondary" className="fs-5" />
             ))}
-            </div>
+          </div>
         </div>
       </section>
     );

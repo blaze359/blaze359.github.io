@@ -25,6 +25,18 @@
       "technologies": ["Next.js", "React", "TypeScript", "Vercel", "FontAwesome", "ShadCN", "Mobx", "Tailwind CSS" ]
     },
     {
+      "id": 3,
+      "name": "Graco B2C E-Commerce Platform",
+      "shortDescription": "This is a new e-commerce platform for Graco built using React and TypeScript.",
+      "longDescription": "This project is a new e-commerce platform for Graco, built using modern web technologies such as React and TypeScript. The platform is designed to start moving Graco e-commerce to a new unified platform. TH is past Graco has had a public website and a distributor portal. This new project strives to create a seamless connection between the existing public AEM site and a Next.js React shopping experience. The platform is also optimized for performance and scalability, utilizing AWS services for hosting and deployment. The design is responsive and accessible, ensuring that customers can easily navigate and use the platform on any device. This project showcases my ability to build complex web applications using modern technologies and best practices in web development. My focus on this project has been on the front-end React/TypeScript code. In addition I also worked on the infrastructure and deployment of the project using AWS and Terraform as well as backend integrations with a Product PIM. Currently this project has only been released for 20 products with e-commerce only available for the UK. Future plans include expanding the product catalog and rolling out e-commerce to additional countries.",
+      "problem": "",
+      "solution": "",
+      "repository": "Project is internal to Graco and cannot be shared.",
+      "url": ["https://www.graco.com/gb/en/homeowner/product/26d361-truecoat-360-cordless-connect.html"],
+      "images": ["/img/Graco e-com product.jpg", "/img/Graco e-com cart.jpg"],
+      "technologies": ["React", "TypeScript", "Tailwind CSS", "Next.js", "Playwright", "AWS", "ShadCN", "Zod", "FontAwesome", "Terraform" ]
+    },
+    {
       "id": 4,
       "name": "PIM driven Selector Tool",
       "shortDescription": "This is an AEM component that uses PIM Model Group data to drive selections.",

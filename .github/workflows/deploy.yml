@@ -30,16 +30,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 4️⃣ Build the React app
+      # 4️⃣ Run linting
+      - name: Lint code
+        run: npm run lint
+
+      # 5️⃣ Build the React app
       - name: Build
         run: npm run build
 
-      # 5️⃣ Configure git for gh-pages commits
+      # 6️⃣ Configure git for gh-pages commits
       - name: Configure git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-      # 6️⃣ Deploy to GitHub Pages
+      # 7️⃣ Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         run: npx gh-pages -d build --repo https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/blaze359/blaze359.github.io.git

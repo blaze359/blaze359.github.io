@@ -1,5 +1,5 @@
-import sunsetImage from "../assets/IMG_0255.jpg"
-import styled from "styled-components"
+import sunsetImage from "../assets/IMG_0255.jpg";
+import styled from "styled-components";
 
 const Header = styled.header`
     height: 8em;
@@ -8,11 +8,8 @@ const Header = styled.header`
     background-size: cover;
     background-position-x: center;
     background-position-y: 75%;
-
 `;
 
 export default function Heading() {
-    return (
-        <Header />
-    )
+    return <Header />;
 }

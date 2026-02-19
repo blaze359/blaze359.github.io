@@ -4,6 +4,8 @@ import App from './App';
 import { HashRouter as Router } from "react-router-dom";
 import { createGlobalStyle } from 'styled-components';
 import { ThemeProvider } from "./context/ThemeContext";
+import { StatsigProvider } from '@statsig/react-bindings';
+import { statsigUser, STATSIG_CLIENT_KEY } from './statsig/config';
 
 const GlobalStyle = createGlobalStyle`
   html, body, #root {
@@ -16,11 +18,16 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <GlobalStyle />
-      <Router>
-        <App />
-      </Router>
-    </ThemeProvider>
+    <StatsigProvider
+      sdkKey={STATSIG_CLIENT_KEY}
+      user={statsigUser}
+    >
+      <ThemeProvider>
+        <GlobalStyle />
+        <Router>
+          <App />
+        </Router>
+      </ThemeProvider>
+    </StatsigProvider>
   </React.StrictMode>,
 );

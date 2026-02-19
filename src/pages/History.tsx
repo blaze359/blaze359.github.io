@@ -1,12 +1,19 @@
 import { Accordion } from "react-bootstrap";
-import HistoryData from "../data/history.json";
 import { Ul } from "../styles/Ul";
+import { useStatsigConfig } from "../statsig/useStatsigConfig";
+import type { WorkHistory, Education, Certificate } from "../types/history";
+
 export default function History() {
+  const historyData = useStatsigConfig("history_config");
+  const historyItems = historyData.get("History", []) as WorkHistory[];
+  const educationItems = historyData.get("Education", []) as Education[];
+  const certificateItems = historyData.get("Certificates", []) as Certificate[];
+
   return (
     <section>
       <h1>History</h1>
       <Ul className="ps-0">
-        {HistoryData.History.map((item) => (
+        {historyItems.map((item) => (
           <li key={item.Company}>
             <h3 className="mb-0">
               {item.Company} - {item.Location}
@@ -44,7 +51,7 @@ export default function History() {
       </Ul>
       <h2>Education</h2>
       <Ul>
-        {HistoryData.Education.map((edu) => (
+        {educationItems.map((edu) => (
           <li key={edu.School}>
             <h3 className="mb-0">
               {edu.School} - {edu.Location}
@@ -58,7 +65,7 @@ export default function History() {
       </Ul>
       <h2>Certifications</h2>
       <Ul>
-        {HistoryData.Certificates.map((cert) => (
+        {certificateItems.map((cert) => (
           <li key={cert.Name}>
             <h3 className="mb-0">{cert.Name}</h3>
             <p className="mb-0">Issued by: {cert.IssuingOrganization}</p>

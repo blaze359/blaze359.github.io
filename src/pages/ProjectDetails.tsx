@@ -1,38 +1,47 @@
 import { useParams } from "react-router-dom";
-import projectData from "../data/projects.json";
 import ImageCarousel from "../components/ImageCarousel";
 import MyBadge from "../components/MyBadge";
+import { useStatsigConfig } from "../statsig/useStatsigConfig";
+import { Project } from "../types/projects";
 
 export default function ProjectDetails() {
     const { id } = useParams();
     const projectId = id ? Number(id) : null;
-    const project = projectData.projects.find(proj => proj.id === projectId);
+    const projectsData = useStatsigConfig("projects_config");
+    const projects = projectsData.get("projects", []) as Project[];
+    const projectFromConfig = projects.find(proj => proj.id === projectId);
 
     return (
       <section className="d-flex flex-column gap-4">
-        <h2>{project ? project.name : "Project Not Found"}</h2>
-        {project?.images && project.images.length > 0 ? (
-          <ImageCarousel images={project.images} />
+        <h2>
+          {projectFromConfig ? projectFromConfig.name : "Project Not Found"}
+        </h2>
+        {projectFromConfig?.images && projectFromConfig.images.length > 0 ? (
+          <ImageCarousel images={projectFromConfig.images} />
         ) : null}
-        {project?.problem ? (
+        {projectFromConfig?.problem ? (
           <>
             <div>
               <h3>Problem</h3>
-              <p>{project.problem}</p>
+              <p>{projectFromConfig.problem}</p>
             </div>
             <div>
               <h3>Solution</h3>
-              <p>{project.solution}</p>
+              <p>{projectFromConfig.solution}</p>
             </div>
           </>
         ) : (
-          <p>{project ? project.longDescription : "No details available."}</p>
+          <p>
+            {projectFromConfig
+              ? projectFromConfig.longDescription
+              : "No details available."}
+          </p>
         )}
 
-        {project?.url && project.url.length > 0 ? (
+        {projectFromConfig?.url && projectFromConfig.url.length > 0 ? (
           <div className="d-flex flex-row gap-2">
             <p>URL:</p>
-            {project.url.map((url, index) =>
+            {projectFromConfig.url.map((url, index) =>
               url.includes("http") ? (
                 <a
                   key={index}
@@ -48,19 +57,19 @@ export default function ProjectDetails() {
             )}
           </div>
         ) : null}
-        {project?.repository ? (
+        {projectFromConfig?.repository ? (
           <div className="d-flex flex-row gap-2">
             <p>Repository:</p>
-            {project.repository.includes("http") ? (
+            {projectFromConfig.repository.includes("http") ? (
               <a
-                href={project.repository}
+                href={projectFromConfig.repository}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {project.repository}
+                {projectFromConfig.repository}
               </a>
             ) : (
-              <p>{project.repository}</p>
+              <p>{projectFromConfig.repository}</p>
             )}
           </div>
         ) : null}
@@ -68,7 +77,7 @@ export default function ProjectDetails() {
           {" "}
           Technologies:
           <div className="d-flex flex-wrap gap-2 mt-2">
-            {project?.technologies.map((tech) => (
+            {projectFromConfig?.technologies.map((tech) => (
               <MyBadge text={tech} key={tech} bg="secondary" className="fs-5" />
             ))}
           </div>
